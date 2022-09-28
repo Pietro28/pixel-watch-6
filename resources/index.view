@@ -1,0 +1,82 @@
+<svg viewport-fill="black" id="back">
+  
+  <!-- <line x1="0%" x2="100%"  y1="50%"  y2="50%" fill="red" stroke-width="1"/>
+  <line x1="50%" x2="50%"  y1="0%"  y2="100%" fill="red" stroke-width="1"/> -->
+  
+  <section x="0" y="0" width="100%" id="date">
+    <use href="#fitfont" id="dateLabelDay" x="50%+10" y="14%" class="primaryLabel">
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+    </use>
+    <use href="#fitfont" id="dateLabelNum" x="50%+15" y="14%" class="secondaryLabel">
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+    </use>
+  </section>
+
+  <section x="0" y="0" width="100%" id="clock">
+    <use href="#fitfont" id="clockLabel" class="hourLabel" x="50%" y="48%-10" class="primaryLabel">
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+    </use>
+  </section>
+
+  <svg x="0" y="0%" id="ampm">
+    <use href="#fitfont" id="ampmLabel" x="50%" y="92%" class="tertiaryLabel">
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+    </use>
+  </svg>
+
+  <svg id="calories">
+    <arc x="20%-40" y="60%" width="80" height="80" arc-width="6" start-angle="30" sweep-angle="300" class="backgroundArc"/>
+    <arc id="arcCals" x="20%-40" y="60%" width="80" height="80" arc-width="6" start-angle="30" sweep-angle="0" class="primaryLabel">
+      <animate id="arcCalsAnim" attributeName="sweep-angle" begin="enable" from="0" to="300" dur="0.5" final="keep" easing="ease-out" />
+    </arc>
+    <image href="stat_cals.png" class="icon" id="calsIcon" x="20%-12" y="60%-12"/>
+    <use href="#fitfont" id="calsLabel" class="statsLabel" x="20%" y="70%+6" class="secondaryLabel">
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+    </use>
+  </svg>
+
+ <svg id="hb">
+    <arc x="50%-40" y="60%" width="80" height="80" arc-width="6" start-angle="30" sweep-angle="300" class="backgroundArc"/>
+    <arc id="arcHb" x="50%-40" y="60%" width="80" height="80" arc-width="6" start-angle="30" sweep-angle="0" class="primaryLabel"/>
+    <image href="stat_hr.png" class="icon" id="hbIcon" x="50%-12" y="60%-12"/>
+    <use href="#fitfont" id="hbLabel" class="statsLabel" x="50%" y="70%+6" class="secondaryLabel">
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+    </use>
+  </svg>
+
+  <svg id="stat">
+    <arc x="80%-40" y="60%" width="80" height="80" arc-width="6" start-angle="30" sweep-angle="300" class="backgroundArc"/>
+    <arc id="arcStat" x="80%-40" y="60%" width="80" height="80" arc-width="6" start-angle="30" sweep-angle="0" class="primaryLabel">
+      <animate id="arcAnim" attributeName="sweep-angle" begin="enable" from="0" to="300" dur="0.5" final="keep" easing="ease-out" />
+    </arc>
+    <image href="stat_steps.png" class="icon" id="statIcon" x="80%-12" y="60%-12"/>
+    <use href="#fitfont" id="statLabel" class="statsLabel" x="80%" y="70%+6" class="secondaryLabel">
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+      <use href="#fitfont-char"/>
+    </use>
+  </svg>
+
+  <rect id="screenButton" pointer-events="visible" x="10%" y="10%" width="80%" height="80%" opacity="0" />
+
+    <!-- USE KPAY UI CODE - DO NOT MODIFY BELOW THIS LINE - ADD ALL OWN UI CODE ABOVE THIS LINE -->
+  <g layer="10000"><use href="#kpay" /></g>
+</svg>
