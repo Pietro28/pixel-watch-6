@@ -1,9 +1,9 @@
 registerSettingsPage(({ settings }) => (
   <Page>
     <Section
-      title={<Text bold align="center">Pixel Watch #6 Settings</Text>}>
+      title={<Text bold align="center">PW Digital Stats Settings</Text>}>
       <Text>
-        Pixel Watch #6 is a minimal clock face, inspired by the Google Pixel style and Material Design You. Choose your color theme based on Material Design 3 palette.
+        PW Digital Stats is a minimal clock face, inspired by the Google Pixel style and Material Design You. Choose your color theme based on Material Design 3 palette.
       </Text>
       <Text> Check my other works on <Link source="https://www.instagram.com/made4fitbit/?hl=en">Made4Fitbit</Link> instagram page</Text>
     </Section>

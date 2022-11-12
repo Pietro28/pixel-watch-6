@@ -1,6 +1,6 @@
 {
-  "name": "pixel-watch-6",
-  "version": "1.0.0",
+  "name": "pw-digital-stats",
+  "version": "1.0.2",
   "private": false,
   "license": "LICENSED",
   "devDependencies": {
@@ -11,7 +11,7 @@
   "fitbit": {
     "appUUID": "60dae134-0d4a-4db3-b970-be0bf1f695d0",
     "appType": "clockface",
-    "appDisplayName": "Pixel Watch 6",
+    "appDisplayName": "PW Digital Stats",
     "iconFile": "resources/icon.png",
     "wipeColor": "#ffffff",
     "requestedPermissions": [
